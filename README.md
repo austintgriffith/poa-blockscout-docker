@@ -17,7 +17,7 @@ docker run -ti --rm --name blockscout \
   -p 4000:4000 blockscout
 ```
 
-Then open a browser window to (http://0.0.0.0:4000)[http://0.0.0.0:4000]
+Then open a browser window to ( http://0.0.0.0:4000 )[http://0.0.0.0:4000]
 
 
 -----------
