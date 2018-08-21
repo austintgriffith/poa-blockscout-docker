@@ -1,6 +1,6 @@
 # poa-blockscout-docker
 
-Run [POA BlockScount](https://github.com/poanetwork/blockscout) with two simple commands:
+Run [POA BlockScout](https://github.com/poanetwork/blockscout) with two simple commands:
 
 Bring up a database:
 ```
