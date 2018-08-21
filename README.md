@@ -27,7 +27,7 @@ Then open a browser window to [http://0.0.0.0:4000](http://0.0.0.0:4000)
 -----------
 
 
-### [Clevis](https://github.com/austintgriffith/clevis):
+### Using [Clevis](https://github.com/austintgriffith/clevis):
 ```
 docker run -ti --rm --name blockscout \
   --link blockscout-postgres:postgres \
