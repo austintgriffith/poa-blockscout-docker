@@ -34,7 +34,7 @@ docker run -ti --rm --name blockscout \
   --link clevis:clevis \
   -e ETHEREUM_JSONRPC_VARIANT=geth \
   -e ETHEREUM_JSONRPC_HTTP_URL=http://clevis:8545 \
-  -p 4000:4000 blockscout
+  -p 4000:4000 austingriffith/blockscout
 ```
 (currently throwing error:)
 ```
@@ -58,7 +58,7 @@ docker run -ti --rm --name blockscout \
   --link blockscout-postgres:postgres \
   -e ETHEREUM_JSONRPC_VARIANT=geth \
   -e ETHEREUM_JSONRPC_HTTP_URL=http://0.0.0.0:8545 \
-  -p 4000:4000 blockscout
+  -p 4000:4000 austingriffith/blockscout
 ```
 (currently throwing error:)
 ```
@@ -80,7 +80,7 @@ docker run -ti --rm --name blockscout \
   --link blockscout-postgres:postgres \
   -e ETHEREUM_JSONRPC_VARIANT=geth \
   -e ETHEREUM_JSONRPC_HTTP_URL=http://10.0.0.107:8545 \
-  -p 4000:4000 blockscout
+  -p 4000:4000 austingriffith/blockscout
 ```
 (currently throwing error:)
 ```
