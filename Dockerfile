@@ -1,6 +1,8 @@
 FROM elixir:1.7.2
 
-## INITIAL UPDATES 
+RUN echo "BUIDLING BLOCKSCOUT"
+
+## INITIAL UPDATES
 RUN apt-get update
 RUN apt-get dist-upgrade -y
 RUN apt-get upgrade -y
@@ -42,6 +44,7 @@ RUN cd apps/explorer && npm install
 
 ## install config
 ADD dev.exs /blockscout/apps/explorer/config/dev.exs
+ADD dev.secret.exs /blockscout/apps/explorer/config/dev.secret.exs
 
 COPY docker-entrypoint.sh /usr/local/bin/
 CMD ["docker-entrypoint.sh"]

@@ -1,16 +1,21 @@
 use Mix.Config
 
+#break cache
+
 # Configure your database
 config :explorer, Explorer.Repo,
   adapter: Ecto.Adapters.Postgres,
   database: "explorer_dev",
   hostname: "postgres",
-  username: "blockscout",
+  username: "postgres",
   password: "blockscout",
-  loggers: [],
   pool_size: 20,
   pool_timeout: 60_000,
   timeout: 80_000
+
+config :logger, :explorer,
+  level: :debug,
+  path: Path.absname("logs/dev/explorer.log")
 
 import_config "dev.secret.exs"
 
